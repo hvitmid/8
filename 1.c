@@ -24,15 +24,14 @@ void main(void)
 	*/
 	printf("\n\n");
 	puts("Задание 1");
-	int m, n, c;
+	int m, n, s,i;
 	puts("Введите значения");
-	scanf_s("%d", &n);
-	for (int i = m, s = 0; i >= n; i++)
+	scanf_s("%d\n %d", &n,&m);
+	for (i = m, s = 0; i <= n; i++)
 	{
 		s += i;
-		printf("выполнено %d раз", i + 1);
-		c = s;
+		printf("выполнено %d раз\n", i + 1);
 	}
-	printf("результат %d", &c);
+	printf("результат %d\n", s);
 
 }
