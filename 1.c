@@ -38,15 +38,20 @@ void main(void)
 	*/
 
 	puts("Задание 2");
-	int x, t, f, i;
+	double x, t, f, i;
+	puts("Введите х");
+	scanf_s("%lf", &x);
 	puts("Введите значения табуляции");
-	scanf("%d\n", &t);
+	scanf_s("%lf", &t);
+	puts("     x          f");
 
-	for (i = 0; i <= t; i++)
+	for (x, t; x >= 0.1+t, x <= 2.5+t; x += t)
 	{
-		puts("\nВведите аргумент");
-		scanf("%d\n", &x);
-		f = pow(x, 3) + 3 * pow(x, 2) - 3;
-		printf("| %d |   %d |", x, f);
+       f = pow(x, 3) + 3 * pow(x, 2) - 3;
+		puts("------------------------");
+		printf("| %lf | %9lf |\n", x, f);
 	}
+	puts("------------------------");
+
+
 }
