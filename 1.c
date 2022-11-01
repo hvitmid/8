@@ -5,7 +5,7 @@
 void main(void)
 {
 	setlocale(LC_ALL, "RUS");
-	/*int x;
+	/* int x;
 	puts("Задание 0");
 	scanf_s("%d", &x);
 	for (int start = 1; start <= 10; start++)
@@ -23,8 +23,8 @@ void main(void)
 		putchar('+');
 		putchar('!');
 	}
-
 	printf("\n\n");
+
 	puts("Задание 1");
 	int m, n, s, i;
 	puts("Введите значения");
@@ -35,7 +35,7 @@ void main(void)
 		printf("выполнено %d раз\n", i + 1);
 	}
 	printf("результат %d\n", s);
-	*/
+	
 
 	puts("Задание 2");
 	double x, t, y;
@@ -51,5 +51,26 @@ void main(void)
 		puts("------------------------");
 		printf("| %lf | %5lf |\n", x, y);
 	}
-		puts("------------------------");
+	puts("------------------------");
+	*/
+
+
+
+
+
+
+	/*  Вычислите для целого N, заданного пользователем вещественное
+значение N2 + (N + 1)2 + (N + 2)2 + ... + (2·N)
+	*/
+	puts("Домашнее задание");
+	int N, s, i;
+	puts("Введите значения");
+	scanf_s("%d", &N);
+	for (i = 0, s = 0; i <= 2 * N; i++)
+	{
+		s += pow(i, 2);
+		printf("выполнено %d раз\n", i + 1);
+	}
+	printf("результат %d\n", s);
+
 }
