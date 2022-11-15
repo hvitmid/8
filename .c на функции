@@ -2,12 +2,13 @@
 #include<stdio.h>
 #include<math.h>
 
-double name(int N, int s)
+int name(int N, int s)
 {
 	for (int i = 0, s = 0; i <= N; i++)
 	{
 		s += pow(N + i, 2);
 		printf("выполнено %d раз\n", i + 1);
+		printf (" %d\n ",s);
 	}
 	return s;
 }
@@ -17,7 +18,7 @@ void main(void)
 {
 	setlocale(LC_ALL, "RUS");
 	/*  Вычислите для целого N, заданного пользователем вещественное
-значение N2 + (N + 1)2 + (N + 2)2 + ... + (2·N)
+значение N2 + (N + 1)2 + (N + 2)2 + ... + (2·N)2
 	*/
 	printf("Домашнее задание\n");
 	int result=0;
@@ -27,5 +28,5 @@ void main(void)
 	scanf_s("%d", &N);
 	int s = 0;
 	result = name(N, s);
-	printf("результат %d\n", s);
+	printf("результат %d\n", result);
 }
